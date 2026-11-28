@@ -14,8 +14,8 @@
 
 <nav aria-label="Main navigation">
   <ul>
-      <li><a href="index.html">Home</a></li>
-    <li><a href="explore.html">Explore the Dorm</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html" aria-current="page">Explore the Dorm</a></li>
     <li><a href="learn.html">Learn more</a></li>
     <li><a href="survey.html">Survey</a></li>
   </ul>
@@ -24,131 +24,140 @@
 <main>
   <h2>Explore the Dorm</h2>
   <p>Explore different residence hall spaces and discover potential accessibility barriers and possible solutions.</p>
-<div class="photo-card">
- <img src="images/traditional-dorm.jpg" alt="Illustrated 3D view of a dorm room from above. Two wooden beds with dark blue mattresses sit in an L-shape along the left and back walls, beneath a large window. Wooden desks with chairs and a long wooden dresser line the walls. A tall cream-colored wardrobe with open shelves fills the right wall, and carpeted floor space is open through the middle of the room.">
-  <h3>Traditional Dorm Room</h3>
-  <p>Explore everyday features of a typical residence hall room.</p>
-<button type="button" onclick="document.getElementById('room-info').showModal()">
-  Explore This Room
-</button>
-<dialog id="room-info">
-  <h2>Traditional Dorm Room</h2>
-  <p>Look closely at the room. Consider whether there is enough space to move between the beds, desks, and other furniture.</p>
-  <h3>Things to consider:</h3>
-  <ul>
-    <li>Is there enough space for a wheelchair to turn and maneuver?</li>
-    <li>Are walkways clear of backpacks, furniture, and other obstacles?</li>
-    <li>Can someone reach the desk, closet, and storage areas?</li>
-  </ul>
+
+  <div class="photo-card">
+    <img src="images/traditional-dorm.jpg" alt="Illustrated 3D view of a dorm room from above. Two wooden beds with dark blue mattresses sit in an L-shape along the left and back walls, beneath a large window. Wooden desks with chairs and a long wooden dresser line the walls. A tall cream-colored wardrobe with open shelves fills the right wall, and carpeted floor space is open through the middle of the room.">
+    <h3>Traditional Dorm Room</h3>
+    <p>Explore everyday features of a typical residence hall room.</p>
+    <button type="button" onclick="document.getElementById('room-info').showModal()">
+      Explore this room
+    </button>
+  </div>
+
+  <dialog id="room-info" aria-labelledby="room-title">
+    <h2 id="room-title">Traditional Dorm Room</h2>
+    <p>Look closely at the room. Consider whether there is enough space to move between the beds, desks, and other furniture.</p>
+
+    <h3>Things to consider:</h3>
+    <ul>
+      <li>Is there enough space for a wheelchair to turn and maneuver?</li>
+      <li>Are walkways clear of backpacks, furniture, and other obstacles?</li>
+      <li>Can someone reach the desk, closet, and storage areas?</li>
+    </ul>
+
     <h3>Possible solutions:</h3>
-  <ul>
-    <li>Arrange furniture to create wider, unobstructed pathways.</li>
-    <li>Necessary storage features moved to more accessible locations.</li>
-    <li>Consider adjustable furniture and accessible storage options.</li>
-  </ul>
-  <button type="button" onclick="document.getElementById('room-info').close()">
-    Close
-  </button>
-</dialog></div>
-<div class="photo-card">
-  <img src="images/dorm-bathroom.jpg" alt="Black-and-white floor plan of a shared dorm bathroom. Four shower stalls run along the top left, and the fourth is wider than the others. Four sinks sit in a row at the top right. Four toilet stalls are along the bottom right, with one stall set apart from the other three.">
-  <h3>Dorm Bathroom & Shower</h3>
-  <p>Explore how bathroom design can affect accessibility and independence.</p>
-  <button type="button" onclick="document.getElementById('bathroom-info').showModal()">
-    Explore this space
-  </button>
-</div>
+    <ul>
+      <li>Arrange furniture to create wider, unobstructed pathways.</li>
+      <li>Move necessary storage features to more accessible locations.</li>
+      <li>Consider adjustable furniture and accessible storage options.</li>
+    </ul>
 
-<dialog id="bathroom-info">
-  <h2>Dorm Bathroom & Shower</h2>
-  <p>Bathrooms can present unique accessibility challenges.</p>
+    <button type="button" onclick="document.getElementById('room-info').close()">
+      Close
+    </button>
+  </dialog>
 
-  <h3>Things to consider:</h3>
-  <ul>
-    <li>Is there enough room to maneuver?</li>
-    <li>Is the shower entrance easy to access?</li>
-    <li>Are grab bars available?</li>
-    <li>Can someone reach the sink and bathroom supplies?</li>
-  </ul>
+  <div class="photo-card">
+    <img src="images/dorm-bathroom.jpg" alt="Black-and-white floor plan of a shared dorm bathroom. Four shower stalls run along the top left, and the fourth is wider than the others. Four sinks sit in a row at the top right. Four toilet stalls are along the bottom right, with one stall set apart from the other three.">
+    <h3>Dorm Bathroom &amp; Shower</h3>
+    <p>Explore how bathroom design can affect accessibility and independence.</p>
+    <button type="button" onclick="document.getElementById('bathroom-info').showModal()">
+      Explore this bathroom
+    </button>
+  </div>
 
-  <h3>Possible solutions:</h3>
-  <ul>
-    <li>Provide roll-in or zero-threshold showers where appropriate.</li>
-    <li>Install properly positioned grab bars.</li>
-    <li>Ensure adequate maneuvering space.</li>
-    <li>Provide accessible sinks and storage.</li>
-  </ul>
+  <dialog id="bathroom-info" aria-labelledby="bathroom-title">
+    <h2 id="bathroom-title">Dorm Bathroom &amp; Shower</h2>
+    <p>Bathrooms can present unique accessibility challenges.</p>
 
-  <button type="button" onclick="document.getElementById('bathroom-info').close()">
-    Close
-  </button>
-</dialog>
-<div class="photo-card">
-  <img src="images/study-space.jpg" alt="Large carpeted lounge with a concrete column in the center. On the left, an orange curved sofa, red armchairs, and round ottomans form a seating cluster. On the right, red and brown armchairs and a red polka-dot sofa face a wall-mounted TV, and a study table with chairs sits along the back wall. A wooden door is at the back.">
-  <h3>Study Space</h3>
-  <p>Explore how study environments can support or limit accessibility and learning.</p>
-  <button type="button" onclick="document.getElementById('study-info').showModal()">
-    Explore this space
-  </button>
-</div>
+    <h3>Things to consider:</h3>
+    <ul>
+      <li>Is there enough room to maneuver?</li>
+      <li>Is the shower entrance easy to access?</li>
+      <li>Are grab bars available?</li>
+      <li>Can someone reach the sink and bathroom supplies?</li>
+    </ul>
 
-<dialog id="study-info">
-  <h2>Study Space</h2>
-  <p>A study environment should allow students with different physical, sensory, and learning needs to work comfortably.</p>
+    <h3>Possible solutions:</h3>
+    <ul>
+      <li>Provide roll-in or zero-threshold showers where appropriate.</li>
+      <li>Install properly positioned grab bars.</li>
+      <li>Ensure adequate maneuvering space.</li>
+      <li>Provide accessible sinks and storage.</li>
+    </ul>
 
-  <h3>Things to consider:</h3>
-  <ul>
-    <li>Is the desk an appropriate height for different users?</li>
-    <li>Is there enough room to move around the furniture?</li>
-    <li>Is the lighting adjustable and comfortable?</li>
-    <li>Can students find a quieter place to focus?</li>
-  </ul>
+    <button type="button" onclick="document.getElementById('bathroom-info').close()">
+      Close
+    </button>
+  </dialog>
 
-  <h3>Possible solutions:</h3>
-  <ul>
-    <li>Provide adjustable-height desks and accessible seating.</li>
-    <li>Keep pathways clear and provide adequate maneuvering space.</li>
-    <li>Offer adjustable lighting options.</li>
-    <li>Provide quiet study areas with reduced sensory distractions.</li>
-  </ul>
+  <div class="photo-card">
+    <img src="images/study-space.jpg" alt="Large carpeted lounge with a concrete column in the center. On the left, an orange curved sofa, red armchairs, and round ottomans form a seating cluster. On the right, red and brown armchairs and a red polka-dot sofa face a wall-mounted TV, and a study table with chairs sits along the back wall. A wooden door is at the back.">
+    <h3>Study Space</h3>
+    <p>Explore how study environments can support or limit accessibility and learning.</p>
+    <button type="button" onclick="document.getElementById('study-info').showModal()">
+      Explore this study space
+    </button>
+  </div>
 
-  <button type="button" onclick="document.getElementById('study-info').close()">
-    Close
-  </button>
-</dialog>
-<section id="accessibility-takeaways">
-  <h2>Accessibility: What Could Be Better?</h2>
+  <dialog id="study-info" aria-labelledby="study-title">
+    <h2 id="study-title">Study Space</h2>
+    <p>A study environment should allow students with different physical, sensory, and learning needs to work comfortably.</p>
 
-  <p>
-    Accessibility is not just about meeting minimum requirements.
-    It is about creating living environments where all students
-    can participate, feel comfortable, and maintain independence.
-  </p>
+    <h3>Things to consider:</h3>
+    <ul>
+      <li>Is the desk an appropriate height for different users?</li>
+      <li>Is there enough room to move around the furniture?</li>
+      <li>Is the lighting adjustable and comfortable?</li>
+      <li>Can students find a quieter place to focus?</li>
+    </ul>
 
-  <h3>Common Barriers in Residence Halls</h3>
-  <ul>
-    <li>Narrow pathways or crowded furniture arrangements</li>
-    <li>Desks, storage, and controls that are difficult to reach</li>
-    <li>Bathrooms and showers that are difficult to navigate</li>
-    <li>Insufficient lighting or overwhelming sensory environments</li>
-    <li>Lack of quiet or flexible study spaces</li>
-  </ul>
+    <h3>Possible solutions:</h3>
+    <ul>
+      <li>Provide adjustable-height desks and accessible seating.</li>
+      <li>Keep pathways clear and provide adequate maneuvering space.</li>
+      <li>Offer adjustable lighting options.</li>
+      <li>Provide quiet study areas with reduced sensory distractions.</li>
+    </ul>
 
-  <h3>What Can Make a Difference?</h3>
-  <ul>
-    <li>Thoughtful furniture placement and clear pathways</li>
-    <li>Adjustable furniture and accessible storage</li>
-    <li>Inclusive bathroom and shower designs</li>
-    <li>Flexible lighting and sensory-friendly spaces</li>
-    <li>Listening to students with disabilities when designing housing</li>
-  </ul>
+    <button type="button" onclick="document.getElementById('study-info').close()">
+      Close
+    </button>
+  </dialog>
 
-  <h3>Think About It</h3>
-  <p>
-    What is one change you would make to improve accessibility
-    in your residence hall?
-  </p>
-</section>
+  <section id="accessibility-takeaways">
+    <h2>Accessibility: What Could Be Better?</h2>
+
+    <p>
+      Accessibility is not just about meeting minimum requirements.
+      It is about creating living environments where all students
+      can participate, feel comfortable, and maintain independence.
+    </p>
+
+    <h3>Common Barriers in Residence Halls</h3>
+    <ul>
+      <li>Narrow pathways or crowded furniture arrangements</li>
+      <li>Desks, storage, and controls that are difficult to reach</li>
+      <li>Bathrooms and showers that are difficult to navigate</li>
+      <li>Insufficient lighting or overwhelming sensory environments</li>
+      <li>Lack of quiet or flexible study spaces</li>
+    </ul>
+
+    <h3>What Can Make a Difference?</h3>
+    <ul>
+      <li>Thoughtful furniture placement and clear pathways</li>
+      <li>Adjustable furniture and accessible storage</li>
+      <li>Inclusive bathroom and shower designs</li>
+      <li>Flexible lighting and sensory-friendly spaces</li>
+      <li>Listening to students with disabilities when designing housing</li>
+    </ul>
+
+    <h3>Think About It</h3>
+    <p>
+      What is one change you would make to improve accessibility
+      in your residence hall?
+    </p>
+  </section>
 </main>
 
 </body>
