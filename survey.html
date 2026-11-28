@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Survey | Beyond Ramps: A Day in the Dorm</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0 2rem; }
+  caption { font-weight: bold; text-align: left; margin-bottom: 0.5rem; }
+  th, td { border: 1px solid #1a1a1a; padding: 0.5rem; text-align: left; vertical-align: top; }
+  th { background-color: #e8ecf5; }
+  .bar { display: block; height: 0.9rem; background-color: #1b2a49; margin-top: 0.3rem; }
+  .table-scroll { overflow-x: auto; }
+  blockquote { border-left: 6px solid #1b2a49; margin: 1rem 0; padding: 0.25rem 1rem; background-color: #f1f3f9; }
+  details { margin: 1rem 0; }
+  summary { cursor: pointer; font-weight: bold; }
+  summary:focus { outline: 3px solid #b35900; outline-offset: 3px; }
+</style>
 </head>
 <body>
 
@@ -24,7 +36,7 @@
 <main>
   <h2>Take Our Survey</h2>
   <p>Share your experience with residence hall accessibility. Your answers help us understand which barriers matter most to students.</p>
-  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScmzjMuvW5gqgSlfYP1RegvO4cSAao-_IFPWMlP7f1xJ3vabw/viewform" target="_blank" rel="noopener">Open the survey in a new tab (easier to use with a screen reader or on a phone)</a></p>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScmzjMuvW5gqgSlfYP1RegvO4cSAao-_IFPWMlP7f1xJ3vabw/viewform" target="_blank" rel="noopener noreferrer">Open the survey in a new tab (easier to use with a screen reader or on a phone)</a></p>
 
   <iframe
     src="https://docs.google.com/forms/d/e/1FAIpQLScmzjMuvW5gqgSlfYP1RegvO4cSAao-_IFPWMlP7f1xJ3vabw/viewform?embedded=true"
@@ -34,10 +46,172 @@
   </iframe>
 
   <h2>Survey Results</h2>
-  <p>Results coming soon.</p>
+  <p>We surveyed 15 UW–Madison students about residence hall accessibility. Most (14 of 15) had lived in a UW residence hall in the past, and 1 lives in one now. Because this is a small group, these results show real student experiences but do not represent every student on campus.</p>
+
+  <h3>Key findings</h3>
+  <ul>
+    <li>Laundry was the lowest-rated area (average 2.33 out of 5), followed by storage (2.73) and kitchens (3.00).</li>
+    <li>5 of 15 respondents (33.3%) lived in a residence hall with no elevator.</li>
+    <li>Elevators came up in 6 of the 11 written answers about difficulties, including no elevator, unreliable elevators, and trouble finding them.</li>
+    <li>Overall, students rated their residence hall's accessibility 3.13 out of 5.</li>
+  </ul>
+
+  <h3>About the people who answered</h3>
+
+  <p>Seniors were the largest group, at 7 of 15 respondents.</p>
+  <table>
+    <caption>What year are you? (15 responses)</caption>
+    <thead>
+      <tr><th scope="col">Year</th><th scope="col">Responses</th><th scope="col">Percent</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Freshman</th><td>1</td><td>6.7%<span class="bar" style="width:6.7%"></span></td></tr>
+      <tr><th scope="row">Sophomore</th><td>2</td><td>13.3%<span class="bar" style="width:13.3%"></span></td></tr>
+      <tr><th scope="row">Junior</th><td>4</td><td>26.7%<span class="bar" style="width:26.7%"></span></td></tr>
+      <tr><th scope="row">Senior</th><td>7</td><td>46.7%<span class="bar" style="width:46.7%"></span></td></tr>
+      <tr><th scope="row">Grad</th><td>1</td><td>6.7%<span class="bar" style="width:6.7%"></span></td></tr>
+    </tbody>
+  </table>
+
+  <p>8 of 15 respondents (53.3%) identified as having a disability. This includes chronic health conditions, mental health conditions, and temporary injuries.</p>
+  <table>
+    <caption>Do you identify as having a disability? (15 responses)</caption>
+    <thead>
+      <tr><th scope="col">Answer</th><th scope="col">Responses</th><th scope="col">Percent</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Yes</th><td>8</td><td>53.3%<span class="bar" style="width:53.3%"></span></td></tr>
+      <tr><th scope="row">No</th><td>7</td><td>46.7%<span class="bar" style="width:46.7%"></span></td></tr>
+      <tr><th scope="row">Prefer not to say</th><td>0</td><td>0%</td></tr>
+    </tbody>
+  </table>
+
+  <p>Almost everyone (14 of 15) had lived in a residence hall in the past.</p>
+  <table>
+    <caption>Have you ever lived in a UW residence hall? (15 responses)</caption>
+    <thead>
+      <tr><th scope="col">Answer</th><th scope="col">Responses</th><th scope="col">Percent</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">I currently live in one</th><td>1</td><td>6.7%<span class="bar" style="width:6.7%"></span></td></tr>
+      <tr><th scope="row">I lived in one in the past</th><td>14</td><td>93.3%<span class="bar" style="width:93.3%"></span></td></tr>
+      <tr><th scope="row">Never</th><td>0</td><td>0%</td></tr>
+    </tbody>
+  </table>
+
+  <p>More than half of respondents (8 of 15) lived in the Lakeshore area.</p>
+  <table>
+    <caption>Which area did you live in? (15 responses)</caption>
+    <thead>
+      <tr><th scope="col">Area</th><th scope="col">Responses</th><th scope="col">Percent</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Lakeshore</th><td>8</td><td>53.3%<span class="bar" style="width:53.3%"></span></td></tr>
+      <tr><th scope="row">Southeast</th><td>6</td><td>40%<span class="bar" style="width:40%"></span></td></tr>
+      <tr><th scope="row">Other</th><td>0</td><td>0%</td></tr>
+      <tr><th scope="row">Not sure</th><td>1</td><td>6.7%<span class="bar" style="width:6.7%"></span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Did residence halls have elevators?</h3>
+  <p>One-third of respondents lived in a residence hall with no elevator.</p>
+  <table>
+    <caption>Did your residence hall have an elevator? (15 responses)</caption>
+    <thead>
+      <tr><th scope="col">Answer</th><th scope="col">Responses</th><th scope="col">Percent</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Yes</th><td>10</td><td>66.7%<span class="bar" style="width:66.7%"></span></td></tr>
+      <tr><th scope="row">No</th><td>5</td><td>33.3%<span class="bar" style="width:33.3%"></span></td></tr>
+      <tr><th scope="row">Not sure</th><td>0</td><td>0%</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Accessibility ratings by area</h3>
+  <p>Respondents rated each part of their residence hall from 1 to 5, where 5 is most accessible. The table below is sorted from lowest to highest average. Laundry and storage were rated lowest. Elevators and notices (signs and posted information) were rated highest. Overall accessibility received an average of 3.13 out of 5 (15 responses).</p>
+  <table>
+    <caption>Average accessibility rating out of 5, lowest to highest</caption>
+    <thead>
+      <tr><th scope="col">Area</th><th scope="col">Responses</th><th scope="col">Average rating (out of 5)</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Laundry</th><td>15</td><td>2.33<span class="bar" style="width:46.6%"></span></td></tr>
+      <tr><th scope="row">Storage (closets, drawers, shelves)</th><td>15</td><td>2.73<span class="bar" style="width:54.6%"></span></td></tr>
+      <tr><th scope="row">Kitchen</th><td>13</td><td>3.00<span class="bar" style="width:60%"></span></td></tr>
+      <tr><th scope="row">Room size and layout</th><td>15</td><td>3.13<span class="bar" style="width:62.6%"></span></td></tr>
+      <tr><th scope="row">Entrances and doors</th><td>14</td><td>3.14<span class="bar" style="width:62.8%"></span></td></tr>
+      <tr><th scope="row">Bathrooms</th><td>15</td><td>3.20<span class="bar" style="width:64%"></span></td></tr>
+      <tr><th scope="row">Notices and communication (signs, posted info)</th><td>12</td><td>3.58<span class="bar" style="width:71.6%"></span></td></tr>
+      <tr><th scope="row">Elevators (size, reliability, etc.)</th><td>11</td><td>3.64<span class="bar" style="width:72.8%"></span></td></tr>
+    </tbody>
+  </table>
+
+  <details>
+    <summary>See the full breakdown of ratings</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Number of respondents giving each rating from 1 to 5</caption>
+        <thead>
+          <tr>
+            <th scope="col">Area</th>
+            <th scope="col">Rated 1</th>
+            <th scope="col">Rated 2</th>
+            <th scope="col">Rated 3</th>
+            <th scope="col">Rated 4</th>
+            <th scope="col">Rated 5</th>
+            <th scope="col">Total responses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Laundry</th><td>5</td><td>6</td><td>1</td><td>0</td><td>3</td><td>15</td></tr>
+          <tr><th scope="row">Storage</th><td>1</td><td>6</td><td>5</td><td>2</td><td>1</td><td>15</td></tr>
+          <tr><th scope="row">Kitchen</th><td>3</td><td>1</td><td>4</td><td>3</td><td>2</td><td>13</td></tr>
+          <tr><th scope="row">Room size and layout</th><td>0</td><td>5</td><td>5</td><td>3</td><td>2</td><td>15</td></tr>
+          <tr><th scope="row">Entrances and doors</th><td>2</td><td>2</td><td>3</td><td>6</td><td>1</td><td>14</td></tr>
+          <tr><th scope="row">Bathrooms</th><td>2</td><td>2</td><td>4</td><td>5</td><td>2</td><td>15</td></tr>
+          <tr><th scope="row">Notices and communication</th><td>0</td><td>1</td><td>5</td><td>4</td><td>2</td><td>12</td></tr>
+          <tr><th scope="row">Elevators</th><td>0</td><td>1</td><td>4</td><td>4</td><td>2</td><td>11</td></tr>
+          <tr><th scope="row">Overall accessibility</th><td>1</td><td>3</td><td>6</td><td>3</td><td>2</td><td>15</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <h3>In students' own words</h3>
+  <p>We asked students what accessibility difficulties they have experienced and what they would improve. These are answers from anonymous respondents. Spelling was lightly corrected, and nothing else was changed.</p>
+
+  <blockquote>
+    <p>"I twisted my ankle pretty bad over the winter, and it was very hard to get up to my room on the third floor, since there was no elevator."</p>
+  </blockquote>
+  <blockquote>
+    <p>"No elevator and living on the third floor was tough. I couldn't imagine having a disability and having to navigate that."</p>
+  </blockquote>
+  <blockquote>
+    <p>"Unreliable elevators, slippery entranceway in winter, very minimal storage in rooms, for laundry frequently the entire lower row of units would be in use."</p>
+  </blockquote>
+  <blockquote>
+    <p>"Elevators would break sometimes, entrance doors are not light to push open."</p>
+  </blockquote>
+  <blockquote>
+    <p>"My dorm did not have any accessible doors or elevator options, so if there was anyone with a disability in my building that would need an accommodation, my building in lakeshore would not have been able to work for that individual."</p>
+  </blockquote>
+  <blockquote>
+    <p>"Signage for different amenities because it is difficult to navigate."</p>
+  </blockquote>
+
+  <p>Another respondent, who has accommodations for noise and light sensitivity, described how constant building noise early in the morning and late at night can cause migraines and make it hard to focus. A different respondent described how heavy double entrance doors are hard to open for someone with muscle fatigue. Barriers are not only about wheelchairs and ramps.</p>
 
   <h2>Recommendations</h2>
-  <p>Recommendations based on the survey will go here.</p>
+  <p>Based on what students told us, we recommend:</p>
+  <ul>
+    <li><strong>Reliable elevators in every residence hall.</strong> One-third of respondents lived in a hall with no elevator, and broken elevators came up repeatedly.</li>
+    <li><strong>Lighter or automatic entrance doors.</strong> Heavy and double doors were a barrier for several respondents.</li>
+    <li><strong>Better laundry access.</strong> Laundry was the lowest-rated area. Respondents mentioned machines being full and the cost of using them.</li>
+    <li><strong>More accessible storage.</strong> Storage was the second-lowest-rated area, and respondents described very minimal storage in rooms.</li>
+    <li><strong>Clearer signs and wayfinding.</strong> Respondents had trouble finding elevators and amenities.</li>
+    <li><strong>Larger rooms.</strong> Two respondents named bigger rooms as the one thing they would improve.</li>
+    <li><strong>Think about sensory needs.</strong> Noise and lighting can be barriers for students with hidden disabilities.</li>
+  </ul>
 </main>
 
 </body>
